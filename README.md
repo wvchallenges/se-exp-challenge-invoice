@@ -1,6 +1,6 @@
-# Wave Software Development Experience Challenge
+# Wave Front-end Challenge
 
-Applicants for the [Software developer (Experience)](https://wave.bamboohr.co.uk/jobs/view.php?id=1) role at Wave must complete the
+Applicants for the Front-end engineering role at Wave must complete the
 following challenge, and submit a solution prior to the onsite interview.
 
 The purpose of this exercise is to create something that we can work on together during the onsite. We do this so that you get a chance to
