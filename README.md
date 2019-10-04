@@ -25,7 +25,7 @@ The front-end prototype only needs to do the following:
 - All fields are required. Empty values should present an error message if submitted.
 - On form submit, log the JSON payload to console (no need to mock out server calls!)
 
-The JSON will be available by calling GET https://rawgit.com/wvchallenges/se-exp-challenge-invoice/master/settings.json and can be retrieved usingb fetch, XHR, JQuery or whatever library you're familiar with.
+The JSON will be available by calling GET https://rawgit.com/wvchallenges/se-exp-challenge-invoice/master/settings.json and can be retrieved using fetch, XHR, JQuery or whatever library you're familiar with.
 
 Our desire is to approach this in a way that gives us composable, reusable code for use in later features and products. So some thought should be given to how this code could be expanded upon and repurposed. For now this will be a Canada only product and all addresses are assumed to be in Canada but we plan to roll this out to other countries later. 
 Do not worry about making the UI pretty! Just make it functional. All we ask is that it be easy to add more styling later.
