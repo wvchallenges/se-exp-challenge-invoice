@@ -13,24 +13,50 @@ Feel free to email [dev.careers@waveapps.com](dev.careers@waveapps.com) if you h
 
 ## Project Description
 
-Imagine that this is the early days of Wave's history, and that we are prototyping a new invoicing system in Canada. Our prototype will be entirely API-driven and use a Javascript single-page app as the interface to our APIs.
+### Background:
 
-One piece of the application will be a settings page where users can manage their customer information. Another team has provided a RESTful API to supply the data. We need you to start working on the client-side portion that will consume this API. For now, we would like to see some early front-end scaffolding to see how you would architect this.
+Imagine that this is the early days of Wave's history, and that **we are prototyping a new invoicing system** in Canada. Our users are small business owners who need to generate professional-looking invoices to send to their customers. For this code challenge, build out **the settings page where users (business owners) can manage their customers' information**. Our prototype will be entirely API-driven and use a Javascript single-page app as the interface to our APIs.
 
-The front-end prototype only needs to do the following:
+### Functional requirements:
 
-- Retrieve the data from the GET endpoint
-- Show a compact list of customers (in the JSON under the "customers" key)
-- Let the user select a customer for editing, which shows a form with name, email, channel (value may be one of 'website', 'email', 'phone', 'word-of-mouth', 'other'), address, postal, city, province
-- All fields are required. Empty values should present an error message if submitted.
+Customer information page should do the following:
+
+- Retrieve the data from the GET endpoint: https://cdn.jsdelivr.net/gh/wvchallenges/se-exp-challenge-invoice@master/settings.json
+  - use fetch, XHR, JQuery or whatever library you're familiar with.
+- Show a list of customers (in the JSON under the "customers" key).
+- Let the user select a customer for editing, which shows a form with:
+  - name
+  - email
+  - channel (value may be one of 'website', 'email', 'phone', 'word-of-mouth', 'other', 'unknown')
+  - address
+  - postal
+  - city
+  - province (For now this will be a Canada only product and all addresses are assumed to be in Canada, but we plan to roll this out to other countries later.)
+- Name and email fields are required. Empty values should present an error message if submitted.
 - On form submit, log the JSON payload to console (no need to mock out server calls!)
 
-The JSON will be available by calling GET https://rawgit.com/wvchallenges/se-exp-challenge-invoice/master/settings.json and can be retrieved using fetch, XHR, JQuery or whatever library you're familiar with.
+### Technical requirements:
 
-Our desire is to approach this in a way that gives us composable, reusable code for use in later features and products. So some thought should be given to how this code could be expanded upon and repurposed. For now this will be a Canada only product and all addresses are assumed to be in Canada but we plan to roll this out to other countries later. 
-Do not worry about making the UI pretty! Just make it functional. All we ask is that it be easy to add more styling later.
+- Your application should be easy to run and browse, and should run on either Linux or Mac OS X.
+- It should not require any non open-source software.
+- Our desire is to approach this in a way that gives us composable, reusable code for use in later features and products. So some thought should be given to how this code could be expanded upon and repurposed.
 
-Use whatever framework, tooling, scaffolding, starter-kits you are comfortable with that feel appropriate to this challenge. At Wave, we have used Backbone, Angular, React with the emphasis being heavily on React for current work. Your application should be easy to run and browse, and should run on either Linux or Mac OS X. It should not require any non open-source software.
+### Visual/UX Requirements:
+
+There isn't a particular design we want you to recreate. The UI doesn't have to look beautiful, as long:
+
+- A user can easily differentiate different sections of the page
+- A user can understand how to access and submit the customer edit form
+- The page is useable on desktop and mobile devices
+- It will be easy to add more styling later
+
+#### Lanuage requirements: HTML/JSX, CSS, JS
+
+- Should be built in vanilla JS or a JS-based framework.
+  - Use any JS framework, tooling, scaffolding, starter-kits you are comfortable with that feels appropriate for this challenge. At Wave, we have used Backbone, Angular, React with the emphasis being heavily on React for current work.
+- HTML/JSX: Should use semantic HTML tags
+- CSS: Include at least ONE example of creating layout using CSS. The page should be responsive.
+  - But don't spend too much time making the app look pretty, we only expect the basics.
 
 ### Documentation:
 
@@ -51,7 +77,8 @@ Please modify `README.md` to add:
 
 Evaluation of your submission will be based on the following criteria.
 
-1. Did you follow the instructions for submission?
-1. Did you document your build/run instructions and your explanation of what you are proud of?
-1. Is the code written such that it can easily be repurposed, reused and expanded upon?
-1. Were the various parts of the application and their roles easily identifiable to the reviewer?
+1. Followed the instructions for submission
+1. The submission met all the functional requirements
+1. The submission met all the technical requirements
+1. The various parts of the application and their usage are easily identifiable to the reviewer
+1. The code can easily be repurposed, reused and expanded upon
