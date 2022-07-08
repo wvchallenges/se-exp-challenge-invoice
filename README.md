@@ -52,10 +52,11 @@ There isn't a particular design we want you to recreate. The UI doesn't have to 
 
 #### Lanuage requirements: HTML/JSX, CSS, JS
 
-- Should be built in vanilla JS or a JS-based framework.
+- Should be built in vanilla JS, Typescript or a JS-based framework.
   - Use any JS framework, tooling, scaffolding, starter-kits you are comfortable with that feels appropriate for this challenge. At Wave, we have used Backbone, Angular, React with the emphasis being heavily on React for current work.
 - HTML/JSX: Should use semantic HTML tags
-- CSS: Include at least ONE example of creating layout using CSS. The page should be responsive.
+- CSS: Include at least ONE example of creating layout using CSS (or SASS, SCSS etc).
+  - The page should be responsive.
   - But don't spend too much time making the app look pretty, we only expect the basics.
 
 ### Documentation:
