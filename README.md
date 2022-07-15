@@ -43,16 +43,16 @@ Customer information page should do the following:
 
 ### Visual/UX Requirements:
 
-There isn't a particular design we want you to recreate. The UI doesn't have to look beautiful, as long:
+There isn't a particular design we want you to recreate. The UI doesn't have to look beautiful, as long as:
 
 - A user can easily differentiate different sections of the page
 - A user can understand how to access and submit the customer edit form
 - The page is useable on desktop and mobile devices
 - It will be easy to add more styling later
 
-#### Lanuage requirements: HTML/JSX, CSS, JS
+#### Language requirements: HTML/JSX, CSS, JS
 
-- Should be built in vanilla JS, Typescript or a JS-based framework.
+- Should be built in vanilla JS, Typescript or a JS-based framework (React, Angular, Vue etc).
   - Use any JS framework, tooling, scaffolding, starter-kits you are comfortable with that feels appropriate for this challenge. At Wave, we have used Backbone, Angular, React with the emphasis being heavily on React for current work.
 - HTML/JSX: Should use semantic HTML tags
 - CSS: Include at least ONE example of creating layout using CSS (or SASS, SCSS etc).
